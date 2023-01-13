@@ -1,0 +1,11 @@
+:root {
+    --grey: #888;
+    --black: #3A3A3A;
+    --white: #FFF;
+    --orange: #EB6C27;
+}
+
+body {
+    margin: 0;
+    max-width: 1920px;
+}

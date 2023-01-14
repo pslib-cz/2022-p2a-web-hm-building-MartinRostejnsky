@@ -10,13 +10,19 @@ body {
     max-width: 1920px;
 }
 
-.menu-button {
 
-}
 
 .menu-button__line {
     width: 46px;
     height: 8px;
 
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
+}
+
+.nav-item {
+    display: none;
+}
+
+.active {
+    display: block;
 }

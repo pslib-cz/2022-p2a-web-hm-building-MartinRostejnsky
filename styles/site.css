@@ -24,14 +24,33 @@ nav {
     align-items: center;
 }
 
-.menu-button__line {
-    width: 46px;
-    height: 8px;
+.menu-button__line ~ .menu-button__line {
+    margin-top: 3px;
+}
 
+.menu-button__line {
+    width: 100%;
+    height: 8px;
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
 }
 
+.menudiv > div {
+    position: absolute;
+    width: 48px;
+    height: 56px;
+    top: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menudiv {
+    position: relative;
+}
+
 .menubtn {
+    z-index: 999;
     width: 48px;
     height: 56px;
     border: 0;

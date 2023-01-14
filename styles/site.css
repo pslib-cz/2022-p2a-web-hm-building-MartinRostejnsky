@@ -10,7 +10,19 @@ body {
     max-width: 1920px;
 }
 
+img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .menu-button__line {
     width: 46px;
@@ -19,10 +31,28 @@ body {
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
 }
 
+.menubtn {
+    width: 48px;
+    height: 56px;
+    border: 0;
+    background-color: transparent;
+}
+
+nav menu {
+    position: absolute;
+    bottom: 0;
+}
+
 .nav-item {
     display: none;
 }
 
 .active {
     display: block;
+}
+
+.logo {
+    object-fit: cover;
+    height: 100%;
+    margin-left: -20px;
 }

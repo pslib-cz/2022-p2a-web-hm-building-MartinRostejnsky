@@ -9,7 +9,8 @@ window.onclick = function(event) {
     var active = document.querySelectorAll(".active")
     if (!event.target.matches('.menubtn')) {
         Array.prototype.forEach.call(active, function(el) {
-            el.classList.remove("active")
+            el.classList.remove("active");
+            console.log(event.target);
         });
     }
 }

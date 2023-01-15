@@ -24,8 +24,21 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
 html {
     font-family: Open Sans;
+    color: var(--black);
 }
 
 body {
@@ -63,6 +76,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--white);
 }
 
 .menu-button__line ~ .menu-button__line {
@@ -111,16 +125,16 @@ nav menu {
     gap: 15px;
 }
 
-.nav-item a {
+.nav__item a {
     font-weight: 700;
     color: var(--white);
 }
 
-.nav-item ~ .nav-item a {
+.nav__item ~ .nav__item a {
     font-weight: 500;
 }
 
-.nav-item {
+.nav__item {
     display: block;
 }
 
@@ -253,4 +267,25 @@ figure:nth-child(odd) .sluzby__image {
 
 figure:nth-child(3) .sluzby__image {
     border-radius: 0px 0px 0px 20px;
+}
+
+.header__button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 84px;
+}
+
+.header__button__a {
+    margin: 0 auto;
+    display: none;
+    width: 240px;
+    padding: 16px 53px;
+    text-decoration: none;
+}
+
+.header__button__a::after {
+    content: "\e9cb\e9cb\e9cb";
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }

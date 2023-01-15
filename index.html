@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/buttons.css">
     <link rel="stylesheet" href="./styles/text.css">
-    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 960px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 1200px)">
 
     <link rel="icon" href="./images/logo.png">
     <title>HM Building.cz s.r.o. - Domů</title>
@@ -29,18 +29,21 @@
             </div>
         </div>
         <menu>
-            <li class="nav-item"><a href="#">DOMŮ</a></li>
-            <li class="nav-item"><a href="#">SLUŽBY</a></li>
-            <li class="nav-item"><a href="#">REFERENCE</a></li>
-            <li class="nav-item"><a href="#">O NÁS</a></li>
-            <li class="nav-item"><a href="#">KONTAKT</a></li>
+            <li class="nav__item nav__item--active"><a href="#">DOMŮ</a></li>
+            <li class="nav__item"><a href="#">SLUŽBY</a></li>
+            <li class="nav__item"><a href="#">REFERENCE</a></li>
+            <li class="nav__item"><a href="#">O NÁS</a></li>
+            <li class="nav__item"><a href="#">KONTAKT</a></li>
         </menu>
     </nav>
     <header>
             <h1 class="header__title">HM Building.cz s.r.o.</h1>
             <p class="header__text">liberecká stavební společnost</p>
+            <div class="header__button">
+                <a href="#sluzby" class="button--orange header__button__a">pokračovat <span class="arrowdown"></span></a>
+            </div>
     </header>
-    <article class="article--sluzby">
+    <article id="sluzby" class="article--sluzby">
         <figure class="sluzby__title">
             <h2>Využijte škálu našich <span class="text--orange">služeb</span></h2>
             <p>Ačkoliv provádíme především <span class="text--bold">průmyslové stavby</span>, není pro nás problém postavit Vám <span class="text--bold">rodinný domek na klíč</span>, nebo jen hrubou stavbu. Nejsou nám cizí ani <span class="text--bold">rekonstrukce budov</span> a jejich údržba a to včetně okolních ploch.</p>

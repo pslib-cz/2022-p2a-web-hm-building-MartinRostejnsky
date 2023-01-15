@@ -1,5 +1,12 @@
-.button--white1 {
+button {
+    box-sizing: border-box;
+}
 
+.button--white1 {
+    padding: 12px 40px;
+    background-color: var(--white);
+    color: var(--orange);
+    border: 1px dashed var(--orange);
 }
 
 .button--white2 {
@@ -10,4 +17,14 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
+}
+
+.button--orange {
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 40px;
 }

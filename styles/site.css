@@ -42,10 +42,20 @@ img {
 
 p {
     font-weight: 400;
+    font-size: 14px;
 }
 
 h2 {
     font-weight: 700;
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 17px;
 }
 
 nav {
@@ -178,6 +188,7 @@ figure {
     background-size: cover;
     padding: 22px;
     margin: 0;
+    color: var(--white);
 }
 
 footer {
@@ -185,4 +196,16 @@ footer {
     text-align: center;
     padding: 36px;
     color: var(--white);
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.reference__figure p {
+    font-size: 12px;   
+}
+
+.reference__figure {
+    text-align: center; 
 }

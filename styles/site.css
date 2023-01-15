@@ -222,3 +222,35 @@ footer p {
 .reference__figure {
     text-align: center; 
 }
+
+.sluzby__image {
+    height: 134px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 40px 0px;
+    background-position: center;
+}
+
+.sluzby__image--novostavby {
+    background-image: url(../images/sluzby/sluzba-novostavby-1200w.jpg);
+}
+
+.sluzby__image--prumyslovestavby {
+    background-image: url(../images/sluzby/sluzba-prumyslove-stavby-1920w.jpg);
+}
+
+.sluzby__image--rekonstrukce {
+    background-image: url(../images/sluzby/sluzba-rekonstrukce-1920w.jpg);
+}
+
+.sluzby__image--komunikace {
+    background-image: url(../images/sluzby/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
+}
+
+figure:nth-child(odd) .sluzby__image {
+    border-radius: 0px 0px 0px 40px;
+}
+
+figure:nth-child(3) .sluzby__image {
+    border-radius: 0px 0px 0px 20px;
+}

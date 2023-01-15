@@ -183,6 +183,18 @@ figure {
     margin: 0;
 }
 
+.article--sluzby {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+}
+
+.article--reference {
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .article--presvedceni {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../images/background-CTAblock-4460w.jpg);
     background-size: cover;
@@ -196,6 +208,7 @@ footer {
     text-align: center;
     padding: 36px;
     color: var(--white);
+    margin-top: 76px;
 }
 
 footer p {

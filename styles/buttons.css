@@ -6,7 +6,7 @@ button {
     padding: 12px 40px;
     background-color: var(--white);
     color: var(--orange);
-    border: 1px dashed var(--orange);
+    border: 2px dashed var(--orange);
 }
 
 .button--white2 {

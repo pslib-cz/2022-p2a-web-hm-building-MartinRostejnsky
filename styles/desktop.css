@@ -2,6 +2,12 @@ header {
     height: 100vh;
 }
 
+h2 {
+    font-size: 60px;
+    line-height: 82px;
+    margin-top: 0;
+}
+
 .header__title {
     font-weight: 800;
     font-size: 120px;
@@ -79,3 +85,95 @@ nav menu::before {
 .nav__item--active {
     font-weight: 700;
 }
+
+.article--sluzby {
+    margin: 150 205;
+    /*grid-gap: 140px 52px;*/
+}
+
+.sluzby__title, .reference__title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sluzby__title p, h4 {
+    margin: 0;
+    max-width: 890px;
+}
+
+.article--presvedceni {
+    padding: 128 204;
+    background-position: center;
+}
+
+.article--presvedceni button {
+    margin-top: 40px;
+}
+
+.sluzby__figure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 100px;
+}
+
+.sluzby__image {
+    grid-row: 1 / 4;
+    height: auto;
+}
+
+.sluzby__figure:nth-child(odd) .sluzby__image {
+    grid-column-start: 2;
+}
+
+.article--reference {
+    margin: 170 205;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.reference__title {
+    grid-column: 1 / 4;
+}
+
+.article--reference figure:last-child {
+    grid-column-start: 2;
+}
+
+.reference--overlay  {
+    background: rgba(235, 108, 39, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: var(--white);
+    top: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-direction: column;
+}
+
+a:hover ~ .reference--overlay, a:has(img:hover) ~ .reference--overlay, .reference--overlay:hover{
+    visibility: visible;
+}
+
+.reference__figure {
+    position: relative;
+}
+
+.reference__figure h2 {
+    font-size: 25px;
+    line-height: 34px;
+    margin: 0;
+}
+
+.reference__figure p {
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+}
+

@@ -1,0 +1,13 @@
+.button--white1 {
+
+}
+
+.button--white2 {
+    color: var(--orange);
+    padding: 20px 48.5px;
+    border: none;
+    background-color: var(--white);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}

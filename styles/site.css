@@ -40,6 +40,14 @@ img {
     padding: 0;
 }
 
+p {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 700;
+}
+
 nav {
     padding: 20px;
     display: flex;
@@ -170,4 +178,11 @@ figure {
     background-size: cover;
     padding: 22px;
     margin: 0;
+}
+
+footer {
+    background-color: var(--orange);
+    text-align: center;
+    padding: 36px;
+    color: var(--white);
 }

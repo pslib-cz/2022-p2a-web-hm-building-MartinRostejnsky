@@ -8,6 +8,7 @@ button {
     color: var(--orange);
     font-weight: 700;
     border: 2px dashed var(--orange);
+    display: inline-block;
 }
 
 .button--white2 {
@@ -18,6 +19,7 @@ button {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
+    display: inline-block;
 }
 
 .button--orange {
@@ -28,4 +30,5 @@ button {
     font-size: 14px;
     line-height: 17px;
     padding: 12px 40px;
+    display: inline-block;
 }

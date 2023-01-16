@@ -274,11 +274,11 @@ figure:nth-child(3) .sluzby__image {
     width: 100%;
     text-align: center;
     margin-bottom: 84px;
+    display: none;
 }
 
 .header__button__a {
     margin: 0 auto;
-    display: none;
     width: 240px;
     padding: 16px 53px;
     text-decoration: none;

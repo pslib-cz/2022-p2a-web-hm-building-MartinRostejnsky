@@ -9,6 +9,7 @@ button {
     font-weight: 700;
     border: 2px dashed var(--orange);
     display: inline-block;
+    align-self: flex-start;
 }
 
 .button--white2 {

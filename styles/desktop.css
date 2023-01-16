@@ -109,7 +109,7 @@ nav menu::before {
     background-position: center;
 }
 
-.article--presvedceni button {
+.article--presvedceni a {
     margin-top: 40px;
 }
 

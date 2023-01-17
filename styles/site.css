@@ -295,3 +295,10 @@ figure:nth-child(3) .sluzby__image {
     background-position: bottom;
 }
 
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li::marker {
+    color: var(--orange);
+}

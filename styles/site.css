@@ -89,7 +89,7 @@ nav {
     background: linear-gradient(90deg, var(--orange) 0%, var(--lorange) 100%);
 }
 
-.menudiv > div {
+.menubtn > div {
     position: absolute;
     width: 48px;
     height: 56px;
@@ -100,7 +100,7 @@ nav {
     justify-content: center;
 }
 
-.menudiv {
+.menubtn {
     position: relative;
 }
 

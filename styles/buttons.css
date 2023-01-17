@@ -1,14 +1,12 @@
 .button--white1 {
     padding: 12px 40px;
-    background-color: var(--white);
     color: var(--orange);
-    border: 2px dashed var(--orange);
+    border: 1px dashed var(--orange);
 }
 
 .button--white2 {
     color: var(--orange);
     padding: 20px 48.5px;
-    background-color: var(--white);
     font-size: 15px;
     line-height: 18px;
 }
@@ -25,4 +23,8 @@ a[class^=button--] {
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
+}
+
+a[class^=button--white] {
+    background-color: var(--white);
 }

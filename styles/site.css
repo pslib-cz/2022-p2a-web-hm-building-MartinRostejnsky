@@ -260,7 +260,7 @@ footer p {
 
 .sluzby__image--komunikace {
     background-image: url(../images/sluzby/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
-}
+} /* Potreba predelat! */
 
 figure:nth-child(odd) .sluzby__image {
     border-radius: 0px 0px 0px 40px;
@@ -285,8 +285,8 @@ figure:nth-child(3) .sluzby__image {
 }
 
 .header__button__a::after {
-    content: "\e9cb\e9cb\e9cb";
-    background-image: url(../images/arrow.svg);
+    content: url(../images/arrow.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
+

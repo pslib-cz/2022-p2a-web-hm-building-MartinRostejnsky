@@ -1,4 +1,9 @@
 header {
+    display: flex;
+    height: 10em;
+}
+
+header:has(*) {
     height: 100vh;
 }
 

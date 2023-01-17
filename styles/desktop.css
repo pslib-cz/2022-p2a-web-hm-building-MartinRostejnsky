@@ -96,6 +96,10 @@ nav menu::before {
     /*grid-gap: 140px 52px;*/
 }
 
+.reference__galerie {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .sluzby__title, .reference__title {
     text-align: center;
     display: flex;

@@ -1,0 +1,4 @@
+.reference__galerie {
+    display: grid;
+    grid-template-columns: 1fr;
+}

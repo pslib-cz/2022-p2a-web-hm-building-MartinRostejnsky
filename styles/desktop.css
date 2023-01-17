@@ -108,7 +108,7 @@ nav menu::before {
     flex-wrap: wrap;
 }
 
-.sluzby__title p, h4 {
+h2 + p, h4 {
     margin: 0;
     max-width: 890px;
 }

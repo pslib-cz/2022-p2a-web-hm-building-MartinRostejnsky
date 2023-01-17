@@ -239,7 +239,7 @@ footer p {
 }
 
 .sluzby__image {
-    height: 134;
+    min-height: 134px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0px 0px 40px 0px;

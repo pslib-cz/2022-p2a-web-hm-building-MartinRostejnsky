@@ -1,35 +1,28 @@
-button {
-    box-sizing: border-box;
-}
-
 .button--white1 {
     padding: 12px 40px;
     background-color: var(--white);
     color: var(--orange);
-    font-weight: 700;
     border: 2px dashed var(--orange);
-    display: inline-block;
-    align-self: flex-start;
 }
 
 .button--white2 {
     color: var(--orange);
     padding: 20px 48.5px;
-    border: none;
     background-color: var(--white);
-    font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    display: inline-block;
 }
 
 .button--orange {
-    border: none;
     background-color: var(--orange);
     color: var(--white);
-    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     padding: 12px 40px;
+}
+
+a[class^=button--] {
+    text-decoration: none;
     display: inline-block;
+    font-weight: 700;
 }

@@ -108,7 +108,7 @@ nav menu::before {
     flex-wrap: wrap;
 }
 
-h2 + p, h4 {
+article h2 + p, h4 {
     margin: 0;
     max-width: 890px;
 }

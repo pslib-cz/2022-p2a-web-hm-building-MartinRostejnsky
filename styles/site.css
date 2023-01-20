@@ -126,12 +126,12 @@ nav menu {
 }
 
 .nav__item a {
-    font-weight: 700;
+    font-weight: 500;
     color: var(--white);
 }
 
-.nav__item ~ .nav__item a {
-    font-weight: 500;
+.nav__item--active a {
+    font-weight: 700;
 }
 
 .nav__item {

@@ -1,4 +1,4 @@
-header {
+/*header {
     display: flex;
     height: 10em;
 }
@@ -93,7 +93,6 @@ nav menu::before {
 
 .article--sluzby {
     margin: 150 205;
-    /*grid-gap: 140px 52px;*/
 }
 
 .reference__galerie {
@@ -189,3 +188,4 @@ a:hover ~ .reference--overlay, a:has(img:hover) ~ .reference--overlay, .referenc
     margin: 0;
 }
 
+/*

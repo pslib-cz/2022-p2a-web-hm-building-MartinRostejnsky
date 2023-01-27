@@ -45,7 +45,7 @@ body {
     margin: 0;
     max-width: 1920px;
 }
-
+/*
 img {
     width: 100%;
     display: block;
@@ -265,7 +265,7 @@ footer p {
 
 .sluzby__image--komunikace {
     background-image: url(../images/sluzby/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
-} /* Potreba predelat! */
+}
 
 figure:nth-child(odd) .sluzby__image {
     border-radius: 0px 0px 0px 40px;
@@ -302,3 +302,4 @@ ul li {
 ul li::marker {
     color: var(--orange);
 }
+*/

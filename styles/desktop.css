@@ -91,7 +91,7 @@ nav menu::before {
     font-weight: 700;
 }
 
-.article--sluzby {
+.section--sluzby {
     margin: 150 205;
 }
 
@@ -99,7 +99,7 @@ nav menu::before {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.sluzby__title, .article__title {
+.sluzby__title, .section__title {
     text-align: center;
     display: flex;
     align-items: center;
@@ -107,17 +107,17 @@ nav menu::before {
     flex-wrap: wrap;
 }
 
-article h2 + p, h4 {
+section h2 + p, h4 {
     margin: 0;
     max-width: 890px;
 }
 
-.article--presvedceni {
+.section--presvedceni {
     padding: 128 204;
     background-position: center;
 }
 
-.article--presvedceni a {
+.section--presvedceni a {
     margin-top: 40px;
 }
 
@@ -136,16 +136,16 @@ article h2 + p, h4 {
     grid-column-start: 2;
 }
 
-.article--reference {
+.section--reference {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-article {
+section {
     margin: 170 205;
 }
 
-.article__title {
+.section__title {
     grid-column: 1 / 4;
 }
 

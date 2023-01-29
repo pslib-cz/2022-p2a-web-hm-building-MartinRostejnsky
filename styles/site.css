@@ -36,6 +36,85 @@
     font-weight: 300;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+
+nav {
+    top: 0;
+    position: absolute;
+    padding: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    left: 0;
+    right: 0;
+}
+
+nav menu {
+    position: absolute;
+    top: 112px;
+    left: 20px;
+    right: 20px;
+    background-color: #EB6C27;
+    padding: 25px;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav__item a {
+    font-weight: 500;
+    color: var(--white);
+}
+
+.nav__item--active a {
+    font-weight: 700;
+}
+
+.nav__item {
+    display: block;
+}
+
+menu.active {
+    display: flex;
+}
+
+menu::before {
+    content: "";
+    border-left: .875em solid transparent;
+    border-right: .875em solid transparent;
+    border-bottom: 1.25em solid var(--orange);
+    top: -1.25em;
+    right: .75em;
+}
+
+
+.header__title {
+    margin: 0;
+    font-size: 1.875em;
+    font-weight: 800;
+    line-height: 40.85px;
+}
+
+.header__text {
+    margin: 0;
+    margin-bottom: 1.25em;
+}
+
+.header__button {
+    display: none;
+}
+
+.logo {
+    object-fit: cover;
+    height: 100%;
+}
+
 html {
     font-family: Open Sans;
     color: var(--black);
@@ -71,129 +150,7 @@ h4 {
     font-size: 17px;
 }
 
-nav {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--white);
-}
-
-.menu-button__line ~ .menu-button__line {
-    margin-top: 3px;
-}
-
-.menu-button__line {
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(90deg, var(--orange) 0%, var(--lorange) 100%);
-}
-
-.menubtn > div {
-    position: absolute;
-    width: 48px;
-    height: 56px;
-    top: 0;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.menubtn {
-    position: relative;
-}
-
-.menubtn {
-    z-index: 999;
-    width: 48px;
-    height: 56px;
-    border: 0;
-    background-color: transparent;
-}
-
-nav menu {
-    position: absolute;
-    top: 112px;
-    left: 20px;
-    right: 20px;
-    background-color: #EB6C27;
-    padding: 25px;
-    margin: 0;
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.nav__item a {
-    font-weight: 500;
-    color: var(--white);
-}
-
-.nav__item--active a {
-    font-weight: 700;
-}
-
-.nav__item {
-    display: block;
-}
-
-menu.active {
-    display: flex;
-}
-
-menu::before {
-    content: "";
-    width: 0; 
-    height: 0; 
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 20px solid var(--orange);
-    top: -20px;
-    right: 11px;
-    position: absolute;
-}
-
-
-.logo {
-    object-fit: cover;
-    height: 100%;
-}
-
-header {
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../images/pageheader-1920w.jpg);
-    background-blend-mode: normal, normal, hue, normal;
-    width: 100%;
-    height: 15em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    text-align: center;
-    gap: 2px;
-    color: var(--white);
-    display: none;
-}
-
-header:has(*) {
-    display: flex;
-}
-
-.header__title {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 40.85px;
-}
-
-.header__text {
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-article {
+section {
     margin-top: 46px;
     margin: 20px;
 }
@@ -202,19 +159,19 @@ figure {
     margin: 0;
 }
 
-.article--sluzby {
+.section--sluzby {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 40px;
 }
 
-.article--reference {
+.section--reference {
     grid-gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.article--presvedceni {
+.section--presvedceni {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../images/background-CTAblock-4460w.jpg);
     background-size: cover;
     padding: 22px;

@@ -28,3 +28,18 @@ a[class^=button--] {
 a[class^=button--white] {
     background-color: var(--white);
 }
+
+.nav__button > div {
+    width: 3em;
+    height: 3.5em;
+    top: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__button {
+    color:  var(--black);
+    position: relative;
+}

@@ -72,6 +72,8 @@ h4 {
 }
 
 nav {
+    margin-bottom: auto;
+    color: var(--black);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -113,6 +115,7 @@ nav {
 }
 
 nav menu {
+    text-align: left;
     position: absolute;
     top: 112px;
     left: 20px;
@@ -164,7 +167,7 @@ header {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../images/pageheader-1920w.jpg);
     background-blend-mode: normal, normal, hue, normal;
     width: 100%;
-    height: 15em;
+    height: 24em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -301,4 +304,8 @@ ul li {
 
 ul li::marker {
     color: var(--orange);
+}
+
+li > ul {
+    margin-top: 10px;
 }

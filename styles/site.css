@@ -58,10 +58,12 @@ p {
     font-size: 14px;
 }
 
-h2 {
+.footer__heading {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 60px;
+    margin: 0;
 }
+
 
 h3 {
     font-size: 20px;
@@ -229,7 +231,7 @@ article {
 footer {
     background-color: var(--orange);
     text-align: center;
-    padding: 36px;
+    padding: 2.25em;
     color: var(--white);
     margin-top: 76px;
 }
@@ -239,7 +241,7 @@ footer p {
 }
 
 .reference__article p {
-    font-size: 12px;   
+    font-size: .75em;   
 }
 
 .reference__article {
@@ -250,7 +252,7 @@ footer p {
     min-height: 8em;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 0 0 2.5em 0;
     background-position: center;
 }
 

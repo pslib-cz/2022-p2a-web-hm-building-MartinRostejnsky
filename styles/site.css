@@ -52,9 +52,11 @@ img {
     margin: 0;
     padding: 0;
 }
-
 p {
     font-weight: 400;
+}
+
+p, h4 {
     font-size: 14px;
 }
 

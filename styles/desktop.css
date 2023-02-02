@@ -113,6 +113,10 @@ section h2 + p, h4 {
     max-width: 890px;
 }
 
+h4 {
+    margin-top: 10px;
+}
+
 .section--presvedceni {
     padding: 128 204;
     background-position: center;

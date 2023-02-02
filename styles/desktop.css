@@ -3,11 +3,11 @@ header {
     height: 10em;
 }
 
-header:has(*) {
+header:has(h1) {
     height: 100vh;
 }
 
-h2 {
+h2, .footer__heading {
     font-size: 60px;
     line-height: 82px;
     margin-top: 0;

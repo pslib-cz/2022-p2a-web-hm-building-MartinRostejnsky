@@ -122,7 +122,7 @@ section h2 + p, h4 {
     margin-top: 40px;
 }
 
-.sluzby__figure {
+.sluzby__article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 100px;
@@ -133,7 +133,7 @@ section h2 + p, h4 {
     height: auto;
 }
 
-.sluzby__figure:nth-child(odd) .sluzby__image {
+.sluzby__article:nth-child(odd) .sluzby__image {
     grid-column-start: 2;
 }
 
@@ -150,7 +150,7 @@ section {
     grid-column: 1 / 4;
 }
 
-.reference__figure--more {
+.reference__article--more {
     grid-column-start: 2;
 }
 
@@ -173,17 +173,17 @@ a:hover ~ .reference--overlay, a:has(img:hover) ~ .reference--overlay, .referenc
     visibility: visible;
 }
 
-.reference__figure {
+.reference__article {
     position: relative;
 }
 
-.reference__figure h2 {
+.reference__article h2 {
     font-size: 25px;
     line-height: 34px;
     margin: 0;
 }
 
-.reference__figure p {
+.reference__article p {
     font-size: 20px;
     line-height: 27px;
     margin: 0;

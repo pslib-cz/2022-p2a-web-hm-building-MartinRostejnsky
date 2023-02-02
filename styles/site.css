@@ -201,7 +201,7 @@ section {
     margin: 20px;
 }
 
-figure {
+article {
     margin: 0;
 }
 
@@ -238,11 +238,11 @@ footer p {
     font-size: 15px;
 }
 
-.reference__figure p {
+.reference__article p {
     font-size: 12px;   
 }
 
-.reference__figure {
+.reference__article {
     text-align: center; 
 }
 
@@ -270,11 +270,11 @@ footer p {
     background-image: url(../images/sluzby/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
 } /* Potreba predelat! */
 
-figure:nth-child(odd) .sluzby__image {
+article:nth-child(odd) .sluzby__image {
     border-radius: 0px 0px 0px 40px;
 }
 
-figure:nth-child(3) .sluzby__image {
+article:nth-child(3) .sluzby__image {
     border-radius: 0px 0px 0px 20px;
 }
 

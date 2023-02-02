@@ -113,6 +113,21 @@ section h2 + p, h4 {
     max-width: 890px;
 }
 
+.kontakt__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.map {
+    width: 50vw;
+}
+
+.map__box {
+    margin-right: -194px;
+    background: linear-gradient(0deg, rgba(235, 108, 39, 0.6), rgba(235, 108, 39, 0.6));
+    z-index: 999;
+}
+
 h4 {
     margin-top: 10px;
 }

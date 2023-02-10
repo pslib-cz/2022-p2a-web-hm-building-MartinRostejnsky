@@ -1,0 +1,33 @@
+
+
+.header__button__a::after {
+    content: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.menu-button__line ~ .menu-button__line {
+    margin-top: 3px;
+}
+
+.menu-button__line {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, var(--orange) 0%, var(--lorange) 100%);
+}
+
+.menubtn * {
+    pointer-events: none;
+}
+
+menu::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 20px solid var(--orange);
+    top: -20px;
+    right: 11px;
+    position: absolute;
+}

@@ -125,6 +125,10 @@ h1 {
     object-position: center;
 }
 
+.reference__article__img img {
+    width: 100%;
+}
+
 .section__title p:first-child {
     font-weight: 700;
     font-size: 1.5em;
@@ -147,7 +151,7 @@ footer {
     background-color: var(--orange);
 }
 
-footer p, footer div {
+footer p, .centered, .reference__article {
     margin: 0;
     text-align: center;
 }

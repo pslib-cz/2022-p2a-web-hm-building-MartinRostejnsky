@@ -69,6 +69,7 @@ nav menu {
     right: 1em;
     display: none;
     padding: 1.5em;
+    background-color: var(--orange);
 }
 
 menu li a {
@@ -78,7 +79,6 @@ menu li a {
 
 nav menu.active {
     display: block;
-    background-color: var(--orange);
 }
 
 .nav__item.active {
@@ -106,7 +106,7 @@ h1 {
 
 .header__title {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .header__subtitle {

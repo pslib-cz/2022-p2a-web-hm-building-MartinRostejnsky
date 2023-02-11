@@ -1,8 +1,70 @@
-/*header {
-    display: flex;
-    height: 10em;
+html {
+    font-size: 24px;
 }
 
+header {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.header__button {
+    display: block;
+}
+
+nav {
+    position: absolute;
+    top: 2em;
+    right: 10em;
+    left: 10em;
+    width: auto;
+    padding: 0;
+}
+
+nav img {
+    padding: 1em;
+}
+
+.menubtn {
+    display: none;
+}
+
+nav menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav menu li {
+    padding: 1em .8em 1em .8em;
+    background-color: var(--white);
+}
+nav menu li.active {
+    background-color: var(--orange);
+}
+nav menu li.active a {
+    color: var(--white);
+}
+
+nav menu li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+menu::before{
+    display: none;
+}
+
+
+
+/*
 header:has(h1) {
     height: 100vh;
 }

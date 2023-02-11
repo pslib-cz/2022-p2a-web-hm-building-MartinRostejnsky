@@ -1,8 +1,11 @@
-section {
+section, footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2em;
+    padding: 3em 1.5em 3em 1.5em;
 }
+
+
 
 /*.reference__galerie {
     display: grid;

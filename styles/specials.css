@@ -96,4 +96,5 @@ ul li::marker {
 
 form button {
     border: none;
+    font-weight: 700;
 }

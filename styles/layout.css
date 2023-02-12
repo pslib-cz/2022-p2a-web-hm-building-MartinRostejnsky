@@ -1,6 +1,20 @@
-.reference__galerie {
+section, footer {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding: 3em 1.5em 3em 1.5em;
 }
 
-/* Potřeba předělat grid u sluzeb !!! */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery .rowspan {
+    grid-area: span 3;
+}

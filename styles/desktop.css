@@ -1,210 +1,207 @@
-header {
-    display: flex;
-    height: 10em;
+html {
+    font-size: 24px;
 }
 
-header:has(h1) {
+header {
     height: 100vh;
 }
 
-h2, .footer__heading {
-    font-size: 60px;
-    line-height: 82px;
-    margin-top: 0;
-}
-
-.header__title {
-    font-weight: 800;
-    font-size: 120px;
-    line-height: 163px;
-}
-
-.header__text {
-    font-weight: 300;
-    font-size: 60px;
-    line-height: 82px;
-}
-
-nav {
-    position: absolute;
-    left: 205px;
-    right: 205px;
-    top: 2em;
-    padding: 0;
-}
-
-.menubtn {
-    display: none;
+h1 {
+    font-size: 3em;
 }
 
 .header__button {
     display: block;
 }
 
-a:has(.logo) {
-    margin-left: 20px;
-}
-
-nav menu {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 0;
-    right: 0;
-    background-color: transparent;
+nav {
+    position: absolute;
+    top: 2em;
+    right: 10em;
+    left: 10em;
+    width: auto;
     padding: 0;
-    left: auto;
-    gap: 0;
 }
 
-nav menu::before {
+nav img {
+    padding: 1em;
+}
+
+.menubtn {
     display: none;
 }
 
+nav menu {
+    font-size: 1rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
 .nav__item {
-    height: 100%;
+    transition: .5s;
     background-color: var(--white);
-    color: var(--grey);
-    padding: 35 0 35 0;
-    transition: 300ms;
+    font-size: .66rem;
+}
+.nav__item:hover, .nav__item:hover a {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: .5s;
 }
 
-.nav__item a {
-    color: var(--grey);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    text-decoration: none;
-    padding: 35 30 35 30;
-}
-
-.nav__item--active, .nav__item:hover {
+.nav__item.active {
     background-color: var(--orange);
 }
-
-.nav__item--active a, .nav__item:hover a {
+.nav__item.active a {
     color: var(--white);
-    transition: 300ms;
-}
-
-.nav__item--active {
     font-weight: 700;
 }
 
-.section--sluzby {
-    margin: 150 205;
-    /*grid-gap: 140px 52px;*/
+.nav__item a {
+    transition: .5s;
+    padding: 2.5em 2em 2.5em 2em;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--grey);
 }
 
-.reference__galerie {
-    grid-template-columns: repeat(3, 1fr);
+menu::before{
+    display: none;
 }
 
-.sluzby__title, .section__title {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+.header__title {
+    font-size: 2em;
 }
 
-section h2 + p, h4 {
-    margin: 0;
-    max-width: 890px;
-}
-
-.kontakt__info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.map {
-    width: 50vw;
-}
-
-.map__box {
-    margin-right: -194px;
-    background: linear-gradient(0deg, rgba(235, 108, 39, 0.6), rgba(235, 108, 39, 0.6));
-    z-index: 999;
-}
-
-h4 {
-    margin-top: 10px;
-}
-
-.section--presvedceni {
-    padding: 128 204;
-    background-position: center;
-}
-
-.section--presvedceni a {
-    margin-top: 40px;
-}
-
-.sluzby__article {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 6.25em;
-}
-
-.sluzby__image {
-    grid-row: 1 / 4;
-    height: auto;
-}
-
-.sluzby__article:nth-child(odd) .sluzby__image {
-    grid-column-start: 2;
-}
-
-.section--reference {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.header__subtitle {
+    font-size: 1em;
 }
 
 section {
-    margin: 170 205;
+    padding: 4em;
 }
 
-.section__title {
-    grid-column: 1 / 4;
+.services__article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+    grid-auto-flow: dense;
 }
 
-.reference__article--more {
-    grid-column-start: 2;
-}
-
-.reference--overlay  {
-    background: rgba(235, 108, 39, 0.9);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    color: var(--white);
-    top: 0;
-    visibility: hidden;
-    pointer-events: none;
+.services__article__body {
     display: flex;
-    justify-content: center;
-    gap: 6px;
+    max-height: 100%;
+    justify-content: space-around;
     flex-direction: column;
 }
 
-a:hover ~ .reference--overlay, a:has(img:hover) ~ .reference--overlay, .reference--overlay:hover{
-    visibility: visible;
+.services__article__body * {
+    margin: 0;
+}
+
+.services__article__img img {
+    height: 16em;
+}
+
+.services__article:nth-child(odd) .services__article__img {
+    grid-column-start: 2;
+}
+
+.section__title {
+    text-align: center;
+    padding: 1em 12em 3em 12em;
+    box-sizing: border-box;
+}
+
+.section__title--left {
+    text-align: left;
+}
+
+.section__title--left h1 {
+    text-align: center;
+}
+
+footer.section__title {
+    padding: 3em 12em 3em 12em;
+}
+
+.section__title p:first-child{
+    font-size: 2em;
+}
+
+.section--reference {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section--reference .section__title, .reference__article--more {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .reference__article {
     position: relative;
 }
 
-.reference__article h2 {
-    font-size: 25px;
-    line-height: 34px;
-    margin: 0;
+.reference--overlay {
+    background: rgba(235, 108, 39, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: var(--white);
+    top: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    gap: .25em;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 420;
 }
 
-.reference__article p {
-    font-size: 20px;
-    line-height: 27px;
-    margin: 0;
+.reference__article:hover .reference--overlay {
+    visibility: visible;
 }
 
+header.shrink {
+    height: 8.5em;
+}
+
+.gallery {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+}
+
+.section--kontakt {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section--kontakt .section__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.map {
+    margin: 0;
+    padding: 0 4em 0 0;
+    background: linear-gradient(0deg, rgba(235, 108, 39, 0.6), rgba(235, 108, 39, 0.6)), url(../images/mapa.jpg);
+    height: 16.5em;
+    background-position: left;
+}
+
+.kontakt {
+    margin: 0;
+    justify-content: space-around;
+    height: 100%;
+    gap: 0;
+}
+
+.list {
+    margin-left: 3em;
+}

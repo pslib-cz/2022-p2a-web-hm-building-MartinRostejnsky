@@ -201,3 +201,7 @@ header.shrink {
     height: 100%;
     gap: 0;
 }
+
+.list {
+    margin-left: 3em;
+}

@@ -203,3 +203,15 @@ form {
 .map {
     width: 100%;
 }
+
+.list {
+    margin-left: 1em;
+}
+
+.list li {
+    padding-bottom: .2em;
+}
+
+.list li ul li:first-child {
+    padding-top: .2em;
+}

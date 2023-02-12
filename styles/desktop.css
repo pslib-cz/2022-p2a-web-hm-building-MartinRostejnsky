@@ -32,6 +32,7 @@ nav img {
 }
 
 nav menu {
+    font-size: 1rem;
     position: relative;
     top: 0;
     right: 0;
@@ -42,24 +43,43 @@ nav menu {
     flex-direction: row;
 }
 
-nav menu li {
-    padding: 1em .8em 1em .8em;
+.nav__item {
+    transition: .5s;
     background-color: var(--white);
+    font-size: .66rem;
 }
-nav menu li.active {
+.nav__item:hover, .nav__item:hover a {
     background-color: var(--orange);
-}
-nav menu li.active a {
     color: var(--white);
+    transition: .5s;
 }
 
-nav menu li a {
+.nav__item.active {
+    background-color: var(--orange);
+}
+.nav__item.active a {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.nav__item a {
+    transition: .5s;
+    padding: 2.5em 2em 2.5em 2em;
     text-decoration: none;
-    color: var(--black);
+    font-weight: 500;
+    color: var(--grey);
 }
 
 menu::before{
     display: none;
+}
+
+.header__title {
+    font-size: 2em;
+}
+
+.header__subtitle {
+    font-size: 1em;
 }
 
 

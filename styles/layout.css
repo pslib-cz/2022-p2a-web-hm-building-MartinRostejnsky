@@ -8,6 +8,7 @@ section, footer {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1em;
 }
 
 .gallery img {

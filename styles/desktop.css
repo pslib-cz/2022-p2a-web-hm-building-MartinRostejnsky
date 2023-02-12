@@ -167,6 +167,5 @@ header.shrink {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
     grid-auto-flow: dense;
 }

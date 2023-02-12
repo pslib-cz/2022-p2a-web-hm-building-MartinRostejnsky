@@ -136,6 +136,11 @@ h1 {
 
 .section__title p:first-child {
     font-weight: 700;
+    font-size: 2em;
+}
+
+.section__subtitle p:first-child {
+    font-weight: 700;
     font-size: 1.5em;
 }
 
@@ -179,4 +184,22 @@ header.shrink {
 
 header.shrink + section h1 {
     color: var(--black);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5em;
+}
+
+.form__item {
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+
+}
+
+.map {
+    width: 100%;
 }

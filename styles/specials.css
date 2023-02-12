@@ -33,3 +33,67 @@ menu::before {
 ul li::marker {
     color: var(--orange);
 }
+
+.kontakt {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.kontakt li {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.kontakt a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.kontakt {
+    padding: 0;
+    margin-bottom: 4em;
+}
+
+.kontakt__icon {
+    width: 2em;
+    height: 2em;
+    background-color: var(--orange);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt__icon img {
+    width: .75em;
+    height: .75em;
+}
+
+.map {
+    width: 100%;
+    padding: 0 1.5em 0 1.5em;
+    height: 14em;
+    background-image: url(../images/mapa.jpg);
+    margin-left: -1.5em;
+    background-position: center;
+    background-size: cover;
+}
+
+.form__item {
+    font-weight: 700;
+}
+
+.form__item__input {
+    border: 1px solid var(--orange);
+    background-color: var(--white);
+}
+
+form button {
+    border: none;
+}

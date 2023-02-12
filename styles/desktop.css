@@ -177,3 +177,27 @@ header.shrink {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
 }
+
+.section--kontakt {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section--kontakt .section__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.map {
+    margin: 0;
+    padding: 0 4em 0 0;
+    background: linear-gradient(0deg, rgba(235, 108, 39, 0.6), rgba(235, 108, 39, 0.6)), url(../images/mapa.jpg);
+    height: 16.5em;
+    background-position: left;
+}
+
+.kontakt {
+    margin: 0;
+    justify-content: space-around;
+    height: 100%;
+    gap: 0;
+}

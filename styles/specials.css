@@ -29,3 +29,7 @@ menu::before {
     right: 11px;
     position: absolute;
 }
+
+ul li::marker {
+    color: var(--orange);
+}

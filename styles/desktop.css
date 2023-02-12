@@ -118,6 +118,14 @@ section {
     box-sizing: border-box;
 }
 
+.section__title--left {
+    text-align: left;
+}
+
+.section__title--left h1 {
+    text-align: center;
+}
+
 footer.section__title {
     padding: 3em 12em 3em 12em;
 }

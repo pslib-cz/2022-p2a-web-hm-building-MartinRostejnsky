@@ -161,6 +161,18 @@ footer p, .centered, .reference__article {
     text-align: center;
 }
 
+.services__article:nth-child(odd) img {
+    border-radius: 0 0 0 2em;
+}
+
+.services__article:nth-child(even) img {
+    border-radius: 0 0 2em 0;
+}
+
+.services__article:nth-child(3) img {
+    border-radius: 0 0 0 1em;
+}
+
 /*img {
     width: 100%;
     display: block;

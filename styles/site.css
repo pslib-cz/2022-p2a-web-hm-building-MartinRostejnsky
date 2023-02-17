@@ -215,3 +215,7 @@ form {
 .list li ul li:first-child {
     padding-top: .2em;
 }
+
+.header__container h1 {
+    font-size: 2em;
+}

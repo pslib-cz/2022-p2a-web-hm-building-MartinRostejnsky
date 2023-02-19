@@ -25,6 +25,9 @@ nav {
 
 nav img {
     padding: 1em;
+    font-size: 22px;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .menubtn {
